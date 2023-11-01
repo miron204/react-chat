@@ -92,7 +92,7 @@ const Chat: React.FC<ChatProps> = ({
       />
       <Dialog ref={dialogRef}>
         <AutoScrollProvider target={dialogRef}>
-          <AssistantInfo title={title} avatar={avatar} description={description} />
+          {/* <AssistantInfo title={title} avatar={avatar} description={description} /> */}
           <Spacer />
           {!!timestamp && <SessionTime>{timestamp}</SessionTime>}
           {children}
