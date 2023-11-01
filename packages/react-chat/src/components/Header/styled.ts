@@ -47,7 +47,7 @@ export const Container = styled(tag('header'), {
   alignItems: 'center',
   height: '$lg',
   padding: '0 $4 0 $5',
-  backgroundColor: '$primary',
+  backgroundColor: 'rgba(90,90,90,1.0)', //'$primary',
   boxShadow: '0 1px 2px $shadow16',
 
   [`& ${Avatar.Container}`]: {
