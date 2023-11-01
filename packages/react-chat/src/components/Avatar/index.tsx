@@ -11,7 +11,7 @@ export interface AvatarProps extends React.ComponentProps<typeof AvatarContainer
   /**
    * Pre-defined size variants.
    *
-   * @default 'small'
+   * @default 'large'
    */
   size?: VariantProp<typeof AvatarContainer, 'size'>;
 }
