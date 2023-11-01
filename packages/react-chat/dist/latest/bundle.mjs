@@ -29197,7 +29197,6 @@ const Ma = (e) => (t, r) => Je.forwardRef((o, u) => Je.createElement(t, {
 })), UW = Ma(ba.AVATAR), jN = jt(UW("div"), {
   flexShrink: 0,
   borderRadius: "$round",
-  backgroundColor: "$lightGrey",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
@@ -30716,7 +30715,9 @@ const qA = Ma(ba.BUTTON), QN = jt("button", {
   trans: ["background-color"],
   "&:hover": {
     backgroundColor: "rgba(255,255,255,0.16)",
-    [`& ${Hs.Frame}`]: {}
+    [`& ${Hs.Frame}`]: {
+      color: "$white"
+    }
   },
   [`& ${Hs.Frame}`]: {
     height: "$xxs",

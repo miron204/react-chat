@@ -29,7 +29,7 @@ export const Button = styled(tag(BaseButton.Reset, 'button'), {
     backgroundColor: 'rgba(255,255,255,0.16)',
 
     [`& ${Icon.Frame}`]: {
-      //color: '$white',
+      color: '$white',
     },
   },
 
