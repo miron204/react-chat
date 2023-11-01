@@ -21,8 +21,8 @@ export const Container = styled(tag(Button.Reset), {
   variants: {
     size: {
       small: {
-        height: '$xl',
-        width: '$xl',
+        height: '$xxs',
+        width: '$xxs',
 
         [`& ${Icon.Frame}`]: {
           width: '$xxs',
