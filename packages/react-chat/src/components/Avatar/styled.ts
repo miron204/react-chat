@@ -23,7 +23,7 @@ export const AvatarContainer = styled(tag('div'), {
         height: 150, //'$xxl',
         width: 150, //'$xxl',
         boxSizing: 'border-box',
-        boxShadow: '0 4px 16px 0 $shadow4, 0 0 0 1px $shadow2',
+        //boxShadow: '0 4px 16px 0 $shadow4, 0 0 0 1px $shadow2',
       },
     },
   },
