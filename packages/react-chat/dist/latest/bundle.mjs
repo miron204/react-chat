@@ -50220,10 +50220,10 @@ jt(loe("button"), {
   "& > img": {
     width: "$xxl",
     height: "$xxl",
-    filter: "grayscale(70%)"
+    filter: "grayscale(10%)"
   },
   "& > img:hover": {
-    filter: "grayscale(100%)"
+    filter: "grayscale(0%)"
   },
   padding: 0,
   margin: 0

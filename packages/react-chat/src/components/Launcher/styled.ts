@@ -28,11 +28,11 @@ export const Button = styled(tag('button'), {
   '& > img': {
     width: '$xxl', //'$sm',
     height: '$xxl', //'$sm',
-    filter: 'grayscale(70%)',
+    filter: 'grayscale(10%)',
   },
 
   '& > img:hover': {
-    filter: 'grayscale(100%)',
+    filter: 'grayscale(0%)',
   },
 
   padding: 0,
