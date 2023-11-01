@@ -50215,12 +50215,14 @@ jt(loe("button"), {
   },
   "&:hover": {
     cursor: "pointer",
-    backgroundColor: "$darkPrimary",
-    filter: "grayscale(0%)"
+    backgroundColor: "transparent"
   },
   "& > img": {
     width: "$xxl",
     height: "$xxl",
+    filter: "grayscale(0%)"
+  },
+  "& > img:hover": {
     filter: "grayscale(70%)"
   },
   padding: 0,

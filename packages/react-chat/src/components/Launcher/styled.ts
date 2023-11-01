@@ -22,13 +22,16 @@ export const Button = styled(tag('button'), {
   },
   '&:hover': {
     cursor: 'pointer',
-    backgroundColor: '$darkPrimary',
-    filter: 'grayscale(0%)',
+    backgroundColor: 'transparent', //'$darkPrimary',
   },
 
   '& > img': {
     width: '$xxl', //'$sm',
     height: '$xxl', //'$sm',
+    filter: 'grayscale(0%)',
+  },
+
+  '& > img:hover': {
     filter: 'grayscale(70%)',
   },
 
