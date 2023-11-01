@@ -1,7 +1,7 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 import Chat from '@/components/Chat';
-import { VF_ICON } from '@/fixtures';
+import { VF_ICON_ASSISTANT } from '@/fixtures';
 
 import AssistantInfo from '.';
 
@@ -11,7 +11,7 @@ export default {
   args: {
     title: 'Assistant Name',
     description: "Voiceflow's virtual assistant is here to help.",
-    avatar: VF_ICON,
+    avatar: VF_ICON_ASSISTANT,
   },
 } as ComponentMeta<typeof AssistantInfo>;
 
