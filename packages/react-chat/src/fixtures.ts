@@ -1,1 +1,1 @@
-export const VF_ICON = 'https://cm4-production-assets.s3.amazonaws.com/1668625026913-vf-icon.png';
+export const VF_ICON = 'http://digitaistudio.ru/wp-content/uploads/2023/11/paw4.png';
