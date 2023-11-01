@@ -29216,7 +29216,7 @@ const Ma = (e) => (t, r) => Je.forwardRef((o, u) => Je.createElement(t, {
     }
   },
   defaultVariants: {
-    size: "large"
+    size: "small"
   }
 });
 var NE = { exports: {} }, Ov = {};
@@ -30155,7 +30155,7 @@ const qA = Ma(ba.BUTTON), QN = jt("button", {
     }
   },
   defaultVariants: {
-    size: "large"
+    size: "small"
   }
 }), eK = ({
   svg: e,

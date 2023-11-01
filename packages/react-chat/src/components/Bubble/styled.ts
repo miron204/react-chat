@@ -44,6 +44,6 @@ export const Container = styled(tag(Button.Reset), {
     },
   },
   defaultVariants: {
-    size: 'large',
+    size: 'small',
   },
 });
