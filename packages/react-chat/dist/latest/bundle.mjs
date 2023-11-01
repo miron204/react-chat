@@ -30727,7 +30727,7 @@ const qA = Ma(ba.BUTTON), QN = jt("button", {
   display: "flex",
   flexShrink: 0,
   alignItems: "center",
-  height: "$lg",
+  height: "$sm",
   padding: "0 $4 0 $5",
   backgroundColor: "$primary",
   boxShadow: "0 1px 2px $shadow16",
