@@ -7,7 +7,7 @@ import { styled } from '@/styles';
 const tag = tagFactory(ClassName.BUBBLE);
 
 export const Container = styled(tag(Button.Reset), {
-  display: none, //'flex',
+  display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
   borderRadius: '$round',
@@ -21,8 +21,8 @@ export const Container = styled(tag(Button.Reset), {
   variants: {
     size: {
       small: {
-        height: '$xs',
-        width: '$xs',
+        height: '$xl',
+        width: '$xl',
 
         [`& ${Icon.Frame}`]: {
           width: '$xxs',

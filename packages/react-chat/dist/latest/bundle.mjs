@@ -30123,7 +30123,7 @@ const qA = Ma(ba.BUTTON), QN = jt("button", {
   Primary: XN,
   Secondary: ZN
 }), JW = Ma(ba.BUBBLE), JN = jt(JW(zs.Reset), {
-  display: none,
+  display: "flex",
   justifyContent: "center",
   alignItems: "center",
   borderRadius: "$round",
@@ -30135,8 +30135,8 @@ const qA = Ma(ba.BUTTON), QN = jt("button", {
   variants: {
     size: {
       small: {
-        height: "$xs",
-        width: "$xs",
+        height: "$xl",
+        width: "$xl",
         [`& ${Hs.Frame}`]: {
           width: "$xxs",
           height: "$xxs"
