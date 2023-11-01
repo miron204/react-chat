@@ -7,7 +7,7 @@ import { styled } from '@/styles';
 const tag = tagFactory(ClassName.BUBBLE);
 
 export const Container = styled(tag(Button.Reset), {
-  display: 'flex',
+  display: none, //'flex',
   justifyContent: 'center',
   alignItems: 'center',
   borderRadius: '$round',

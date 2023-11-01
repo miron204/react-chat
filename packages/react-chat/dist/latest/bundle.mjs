@@ -30123,7 +30123,7 @@ const qA = Ma(ba.BUTTON), QN = jt("button", {
   Primary: XN,
   Secondary: ZN
 }), JW = Ma(ba.BUBBLE), JN = jt(JW(zs.Reset), {
-  display: "flex",
+  display: none,
   justifyContent: "center",
   alignItems: "center",
   borderRadius: "$round",
