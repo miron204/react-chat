@@ -1,6 +1,6 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
-import { VF_ICON } from '@/fixtures';
+import { VF_ICON_ASSISTANT } from '@/fixtures';
 
 import Avatar from '.';
 
@@ -15,7 +15,7 @@ export default {
     },
   },
   args: {
-    avatar: VF_ICON,
+    avatar: VF_ICON_ASSISTANT,
   },
 } as ComponentMeta<typeof Avatar>;
 
