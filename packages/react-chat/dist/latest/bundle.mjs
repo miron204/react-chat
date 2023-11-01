@@ -29196,7 +29196,6 @@ const Ma = (e) => (t, r) => Je.forwardRef((o, u) => Je.createElement(t, {
   className: FW(r ? `${e}--${r}` : e, o.className)
 })), UW = Ma(ba.AVATAR), jN = jt(UW("div"), {
   flexShrink: 0,
-  borderRadius: "$round",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
