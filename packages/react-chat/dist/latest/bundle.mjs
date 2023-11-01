@@ -50204,7 +50204,6 @@ jt(loe("button"), {
   justifyContent: "center",
   alignItems: "center",
   borderRadius: "$round",
-  backgroundColor: "$primary",
   trans: ["background-color", "box-shadow"],
   height: "$xl",
   width: "$xl",
@@ -50218,8 +50217,8 @@ jt(loe("button"), {
     backgroundColor: "$darkPrimary"
   },
   "& > img": {
-    width: "$sm",
-    height: "$sm"
+    width: "$xl",
+    height: "$xl"
   },
   padding: 0,
   margin: 0

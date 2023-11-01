@@ -9,7 +9,7 @@ export const Button = styled(tag('button'), {
   justifyContent: 'center',
   alignItems: 'center',
   borderRadius: '$round',
-  backgroundColor: '$primary',
+  //backgroundColor: '$primary',
   trans: ['background-color', 'box-shadow'],
 
   height: '$xl',
@@ -26,8 +26,8 @@ export const Button = styled(tag('button'), {
   },
 
   '& > img': {
-    width: '$sm',
-    height: '$sm',
+    width: '$xl', //'$sm',
+    height: '$xl', //'$sm',
   },
 
   padding: 0,
