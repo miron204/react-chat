@@ -29208,8 +29208,8 @@ const Ma = (e) => (t, r) => Je.forwardRef((o, u) => Je.createElement(t, {
         width: 26
       },
       large: {
-        height: "$xxl",
-        width: "$xxl",
+        height: 50,
+        width: 50,
         boxSizing: "border-box",
         boxShadow: "0 4px 16px 0 $shadow4, 0 0 0 1px $shadow2"
       }
