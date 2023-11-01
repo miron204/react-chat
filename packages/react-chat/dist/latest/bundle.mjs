@@ -50204,7 +50204,7 @@ jt(loe("button"), {
   justifyContent: "center",
   alignItems: "center",
   borderRadius: "$round",
-  backgroundColor: "$primary",
+  backgroundColor: "transparent",
   trans: ["background-color", "box-shadow"],
   height: "$xxl",
   width: "$xxl",

@@ -9,7 +9,7 @@ export const Button = styled(tag('button'), {
   justifyContent: 'center',
   alignItems: 'center',
   borderRadius: '$round',
-  backgroundColor: '$primary',
+  backgroundColor: 'transparent', //'$primary',
   trans: ['background-color', 'box-shadow'],
 
   height: '$xxl', //'$xl',
