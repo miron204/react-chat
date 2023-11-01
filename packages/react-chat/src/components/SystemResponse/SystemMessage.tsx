@@ -15,6 +15,8 @@ import EndState from './state/end';
 import { Controls, List, MessageContainer } from './styled';
 import { MessageProps } from './types';
 
+import { VF_ICON } from '@/fixtures';
+
 export interface SystemMessageProps extends React.PropsWithChildren {
   /**
    * An image URL for an avatar to associate this message with.
@@ -55,7 +57,8 @@ const SystemMessage: React.FC<SystemMessageProps> = ({ avatar, feedback, timesta
     <>
       <Controls ref={controlsRef} />
       <MessageContainer ref={containerRef} withImage={withImage} scrollable={message?.type === MessageType.CAROUSEL}>
-        <Avatar avatar={avatar} />
+        {/* <Avatar avatar={avatar} /> */}
+        <Avatar size="small" avatar={VF_ICON} />
         <List>
           {children ??
             match(message)

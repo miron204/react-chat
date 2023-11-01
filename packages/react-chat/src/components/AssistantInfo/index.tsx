@@ -23,8 +23,8 @@ export interface AssistantInfoProps {
 
 const AssistantInfo: React.FC<AssistantInfoProps> = ({ title, description, avatar }) => (
   <Container>
-    {/* <Avatar size="large" avatar={avatar} /> */}
-    <Avatar size="large" avatar={VF_ICON_ASSISTANT} />
+    <Avatar size="large" avatar={avatar} />
+    {/* <Avatar size="large" avatar={VF_ICON_ASSISTANT} /> */}
     <Title>{title}</Title>
     <Description>{description}</Description>
   </Container>
