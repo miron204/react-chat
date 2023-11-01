@@ -14,7 +14,7 @@ export default {
     size: {
       options: ['small', 'large'],
       control: { type: 'radio' },
-      defaultValue: 'large',
+      defaultValue: 'small',
     },
     svg: {
       options: Object.keys(SVGs).filter((svg) => svg !== 'topCaret'),
