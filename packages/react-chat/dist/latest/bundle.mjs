@@ -30716,9 +30716,7 @@ const qA = Ma(ba.BUTTON), QN = jt("button", {
   trans: ["background-color"],
   "&:hover": {
     backgroundColor: "rgba(255,255,255,0.16)",
-    [`& ${Hs.Frame}`]: {
-      color: "$white"
-    }
+    [`& ${Hs.Frame}`]: {}
   },
   [`& ${Hs.Frame}`]: {
     height: "$xxs",
@@ -30732,7 +30730,7 @@ const qA = Ma(ba.BUTTON), QN = jt("button", {
   alignItems: "center",
   height: "$lg",
   padding: "0 $4 0 $5",
-  backgroundColor: "rgba(90,90,90,1.0)",
+  backgroundColor: "$primary",
   boxShadow: "0 1px 2px $shadow16",
   [`& ${Zf.Container}`]: {
     height: 32,

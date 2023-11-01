@@ -29,7 +29,7 @@ export const Button = styled(tag(BaseButton.Reset, 'button'), {
     backgroundColor: 'rgba(255,255,255,0.16)',
 
     [`& ${Icon.Frame}`]: {
-      color: '$white',
+      //color: '$white',
     },
   },
 
@@ -47,7 +47,7 @@ export const Container = styled(tag('header'), {
   alignItems: 'center',
   height: '$lg',
   padding: '0 $4 0 $5',
-  backgroundColor: 'rgba(90,90,90,1.0)', //'$primary',
+  backgroundColor: '$primary', //'rgba(90,90,90,1.0)', 
   boxShadow: '0 1px 2px $shadow16',
 
   [`& ${Avatar.Container}`]: {
