@@ -55,7 +55,7 @@ const SystemMessage: React.FC<SystemMessageProps> = ({ avatar, feedback, timesta
     <>
       <Controls ref={controlsRef} />
       <MessageContainer ref={containerRef} withImage={withImage} scrollable={message?.type === MessageType.CAROUSEL}>
-        {/* <Avatar avatar={avatar} /> */}
+        <Avatar avatar={avatar} />
         <List>
           {children ??
             match(message)
