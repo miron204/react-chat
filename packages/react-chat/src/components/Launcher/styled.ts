@@ -23,11 +23,13 @@ export const Button = styled(tag('button'), {
   '&:hover': {
     cursor: 'pointer',
     backgroundColor: '$darkPrimary',
+    filter: 'grayscale(0%)',
   },
 
   '& > img': {
     width: '$xxl', //'$sm',
     height: '$xxl', //'$sm',
+    filter: 'grayscale(70%)',
   },
 
   padding: 0,
