@@ -29216,7 +29216,7 @@ const Ma = (e) => (t, r) => Je.forwardRef((o, u) => Je.createElement(t, {
     }
   },
   defaultVariants: {
-    size: "small"
+    size: "large"
   }
 });
 var NE = { exports: {} }, Ov = {};
