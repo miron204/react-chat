@@ -28,6 +28,6 @@ export const AvatarContainer = styled(tag('div'), {
     },
   },
   defaultVariants: {
-    size: 'large',
+    size: 'small',
   },
 });
