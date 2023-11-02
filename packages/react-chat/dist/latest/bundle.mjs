@@ -29170,7 +29170,7 @@ class jv {
     return t(r, this.value);
   }
 }
-const BN = "http://digitaistudio.ru/wp-content/uploads/2023/11/paw5.png", UW = "http://digitaistudio.ru/wp-content/uploads/2023/11/catalpha3.png", zN = "https://general-runtime.voiceflow.com";
+const UW = "http://digitaistudio.ru/wp-content/uploads/2023/11/paw5.png", BN = "http://digitaistudio.ru/wp-content/uploads/2023/11/catalpha3.png", zN = "https://general-runtime.voiceflow.com";
 var ba = /* @__PURE__ */ ((e) => (e.ASSISTANT_INFO = "vfrc-assistant-info", e.AVATAR = "vfrc-avatar", e.BUBBLE = "vfrc-bubble", e.BUTTON = "vfrc-button", e.CARD = "vfrc-card", e.CAROUSEL = "vfrc-carousel", e.CHAT = "vfrc-chat", e.CHAT_INPUT = "vfrc-chat-input", e.FEEDBACK = "vfrc-feedback", e.FOOTER = "vfrc-footer", e.HEADER = "vfrc-header", e.ICON = "vfrc-icon", e.IMAGE = "vfrc-image", e.INPUT = "vfrc-input", e.LAUNCHER = "vfrc-launcher", e.LOADER = "vfrc-loader", e.MESSAGE = "vfrc-message", e.PROMPT = "vfrc-prompt", e.SYSTEM_RESPONSE = "vfrc-system-response", e.TIMESTAMP = "vfrc-timestamp", e.TOOLTIP = "vfrc-tooltip", e.TYPING_INDICATOR = "vfrc-typing-indicator", e.USER_RESPONSE = "vfrc-user-response", e.WIDGET = "vfrc-widget", e))(ba || {});
 function jN(e) {
   var t, r, o = "";
@@ -29880,7 +29880,7 @@ const Rp = NE.exports.Fragment, mt = NE.exports.jsx, va = NE.exports.jsxs, VW = 
 }) => /* @__PURE__ */ va(YN, {
   children: [/* @__PURE__ */ mt(Zf, {
     size: "large",
-    avatar: UW
+    avatar: BN
   }), /* @__PURE__ */ mt(KA, {
     children: e
   }), /* @__PURE__ */ mt(GN, {
@@ -49836,7 +49836,7 @@ const Qie = ({
       scrollable: (o == null ? void 0 : o.type) === Zl.CAROUSEL,
       children: [/* @__PURE__ */ mt(Zf, {
         size: "small",
-        avatar: BN
+        avatar: UW
       }), /* @__PURE__ */ va(ox, {
         children: [h != null ? h : YA(o).with({
           type: Zl.TEXT
