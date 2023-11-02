@@ -41,7 +41,7 @@ const Footer: React.FC<FooterProps> = ({ withWatermark, hasEnded, onStart, onSen
   return (
     <Container withShadow={!!hasEnded} withWatermark={withWatermark}>
       {hasEnded ? (
-        <Button onClick={onStart}>Start New Chat</Button>
+        <Button onClick={onStart}>Начать общение</Button>
       ) : (
         // eslint-disable-next-line jsx-a11y/no-autofocus
         <ChatInput value={message} placeholder="Message…" autoFocus onValueChange={setMessage} onSend={handleSend} />
