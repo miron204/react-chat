@@ -50223,9 +50223,7 @@ jt(soe("button"), {
     height: "$xxl",
     filter: "grayscale(0%)"
   },
-  "& > img:hover": {
-    filter: "grayscale(40%)"
-  },
+  "& > img:hover": {},
   padding: 0,
   margin: 0
 });
