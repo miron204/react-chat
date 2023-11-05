@@ -32,6 +32,7 @@ export const Button = styled(tag('button'), {
   },
 
   '& > img:hover': {
+    top: '-0.16em',
     //filter: 'grayscale(40%)',
   },
 
