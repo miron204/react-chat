@@ -40,12 +40,20 @@ export const Button = styled(tag(BaseButton.Reset, 'button'), {
     trans: ['color'],
   },
 });
-
+/*
+xxs: '16px',
+xs: '24px',
+sm: '36px',
+md: '42px',
+lg: '56px',
+xl: '60px',
+xxl: '72px',
+*/
 export const Container = styled(tag('header'), {
   display: 'flex',
   flexShrink: 0,
   alignItems: 'center',
-  height: '$sm', //'$lg',
+  height: '$md', //'$lg',
   padding: '0 $4 0 $5',
   backgroundColor: '$primary', //'rgba(90,90,90,1.0)', 
   boxShadow: '0 1px 2px $shadow16',
