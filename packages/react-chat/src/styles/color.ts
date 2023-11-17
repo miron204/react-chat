@@ -1,7 +1,7 @@
 import chroma from 'chroma-js';
 
-export const PRIMARY = '#60AEFF'//'#3d82e2';
-export const WARN = '#F09903'//'#db1b42';
+export const PRIMARY = '#60AEFF'; //'#3d82e2';
+export const WARN = '#F09903'; //'#db1b42';
 
 export const SHADOWS = {
   shadow1: 'rgba(0,0,0,0.01)',
