@@ -22490,7 +22490,7 @@ var Ww = { exports: {} };
     return Yr;
   });
 })(Ww);
-const r4 = Ww.exports, a4 = "#3d82e2", L3 = "#db1b42", Kw = {
+const r4 = Ww.exports, a4 = "#60AEFF", L3 = "#F09903", Kw = {
   shadow1: "rgba(0,0,0,0.01)",
   shadow2: "rgba(0,0,0,0.02)",
   shadow3: "rgba(0,0,0,0.03)",
