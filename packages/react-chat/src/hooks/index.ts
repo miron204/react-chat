@@ -1,4 +1,5 @@
 export * from './useAutoScroll';
+export * from './useChatAPI';
 export * from './useDidUpdateEffect';
-export * from './useRuntime';
 export * from './useStateRef';
+export * from './useTheme';

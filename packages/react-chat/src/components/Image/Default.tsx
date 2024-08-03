@@ -1,22 +1,30 @@
 import { ClassName } from '@/constants';
 import { tagFactory } from '@/hocs';
 import { styled } from '@/styles';
-import { VariantProp } from '@/types';
+import type { VariantProp } from '@/types';
 
 export const tag = tagFactory(ClassName.IMAGE);
 
 export const DefaultImageBase = styled(tag('img'), {
-  width: 248,
-
   variants: {
     isRounded: {
       true: {
         borderRadius: '$1',
       },
     },
+    mode: {
+      overlay: {
+        width: 248,
+      },
+      embedded: {
+        width: '100%',
+        maxWidth: 512,
+      },
+    },
   },
   defaultVariants: {
     isRounded: true,
+    mode: 'overlay',
   },
 });
 
@@ -34,7 +42,9 @@ export interface DefaultImageProps extends React.ComponentProps<typeof DefaultIm
   isRounded?: VariantProp<typeof DefaultImageBase, 'isRounded'>;
 }
 
-const DefaultImage: React.FC<DefaultImageProps> = ({ image, ...props }) => <DefaultImageBase {...props} src={image || undefined} />;
+const DefaultImage: React.FC<DefaultImageProps> = ({ image, ...props }) => (
+  <DefaultImageBase {...props} src={image || undefined} />
+);
 
 /**
  * An image rendered as the `src` of an `<img>`.

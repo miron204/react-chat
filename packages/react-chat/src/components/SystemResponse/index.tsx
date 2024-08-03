@@ -1,17 +1,19 @@
+import type { RuntimeAction } from '@voiceflow/sdk-runtime';
 import { useContext } from 'react';
 
-import type { RuntimeAction } from '@/common';
 import Button from '@/components/Button';
-import { RuntimeAPIContext } from '@/contexts';
+import { RuntimeStateAPIContext } from '@/contexts';
 import { useAutoScroll } from '@/hooks';
 
-import Feedback, { FeedbackProps } from '../Feedback';
+import type { FeedbackProps } from '../Feedback';
+import Feedback from '../Feedback';
 import { MessageType } from './constants';
 import { useAnimatedMessages } from './hooks';
 import Indicator from './Indicator';
 import { Actions, Container, Controls, List } from './styled';
-import SystemMessage, { SystemMessageProps } from './SystemMessage';
-import { MessageProps } from './types';
+import type { SystemMessageProps } from './SystemMessage';
+import SystemMessage from './SystemMessage';
+import type { MessageProps } from './types';
 
 export * from './types';
 
@@ -59,8 +61,16 @@ export interface SystemResponseProps {
   Message?: React.ComponentType<SystemMessageProps>;
 }
 
-const SystemResponse: React.FC<SystemResponseProps> = ({ feedback, avatar, timestamp, messages, actions = [], isLast, Message = SystemMessage }) => {
-  const runtime = useContext(RuntimeAPIContext);
+const SystemResponse: React.FC<SystemResponseProps> = ({
+  feedback,
+  avatar,
+  timestamp,
+  messages,
+  actions = [],
+  isLast,
+  Message = SystemMessage,
+}) => {
+  const runtime = useContext(RuntimeStateAPIContext);
 
   const { showIndicator, visibleMessages, complete } = useAnimatedMessages({
     messages,
@@ -86,8 +96,8 @@ const SystemResponse: React.FC<SystemResponseProps> = ({ feedback, avatar, times
 
       {isLast && complete && !!actions.length && (
         <Actions>
-          {actions.map(({ name, request }, index) => (
-            <Button variant="secondary" onClick={() => runtime?.send(name, request)} key={index}>
+          {actions.map(({ request, name }, index) => (
+            <Button variant="secondary" onClick={() => runtime?.interact(request, name)} key={index}>
               {name}
             </Button>
           ))}

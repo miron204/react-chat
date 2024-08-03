@@ -8,15 +8,10 @@ import Timestamp from '@/components/Timestamp';
 import UserResponse from '@/components/UserResponse';
 import { ClassName } from '@/constants';
 import { tagFactory } from '@/hocs';
-import { createTransition, CSS, fadeIn, shift, styled } from '@/styles';
+import type { CSS } from '@/styles';
+import { animationStyles, createTransition, fadeIn, styled } from '@/styles';
 
 const PROMPT_OVERFLOW = 10;
-const SHIFT_DISTANCE = 12;
-
-const animationStyles = ({ distance = SHIFT_DISTANCE, duration, delay }: { distance?: number; duration: number; delay: number }): CSS => ({
-  opacity: 0,
-  animation: [fadeIn, shift(distance)].map((animation) => `${animation} ${duration}ms ease-out ${delay}ms forwards`).join(', '),
-});
 
 const tag = tagFactory(ClassName.CHAT);
 

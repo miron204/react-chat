@@ -1,33 +1,58 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
+
+import { MOCK_IMAGE } from '@/fixtures';
 
 import Card from '.';
 
-export default {
+type Story = StoryObj<typeof Card>;
+
+const meta: Meta<typeof Card> = {
   title: 'Components/Card',
   component: Card,
   args: {
     title: 'Card Header',
     image: '',
-    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa et aliquam sunt necessitatibus molestiae amet ipsum ut.',
+    description:
+      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa et aliquam sunt necessitatibus molestiae amet ipsum ut.',
     actions: [],
   },
-} as ComponentMeta<typeof Card>;
+};
+export default meta;
 
-const Template: ComponentStory<typeof Card> = (args) => <Card {...args} />;
+export const Simple: Story = {};
 
-export const Simple = Template.bind({});
-
-export const WithImage = Template.bind({});
-WithImage.args = {
-  image: 'https://source.unsplash.com/featured/248x150',
+export const WithImage: Story = {
+  args: {
+    image: MOCK_IMAGE,
+  },
 };
 
-export const Actionable = Template.bind({});
-Actionable.args = {
-  ...WithImage.args,
-  actions: [
-    { request: {} as any, name: 'First Button' },
-    { request: {} as any, name: 'Second Button' },
-    { request: {} as any, name: 'Third Button' },
-  ],
+export const Actionable: Story = {
+  args: {
+    ...WithImage.args,
+    actions: [
+      { request: {} as any, name: 'First Button' },
+      { request: {} as any, name: 'Second Button' },
+      { request: {} as any, name: 'Third Button' },
+    ],
+  },
+};
+
+export const WithLongLabels: Story = {
+  args: {
+    ...WithImage.args,
+    actions: [
+      { request: {} as any, name: 'First Button with a very long long long wrapping label' },
+      { request: {} as any, name: 'Second Button with a shorter text' },
+      { request: {} as any, name: 'Third button, also with a shorter text' },
+    ],
+  },
+};
+
+export const WithLongTitle: Story = {
+  args: {
+    ...WithImage.args,
+    title: 'Long card title to wrap inside the card. Some more text to test the growth of card.',
+    actions: [{ request: {} as any, name: 'First Button' }],
+  },
 };

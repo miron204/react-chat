@@ -7,12 +7,13 @@ import { createPlugins } from './vite.config';
 
 export default defineConfig({
   define: {
-    'process.env': '({})',
+    __USE_SHADOW_ROOT__: false,
+    'process.env': {},
   },
   build: {
     outDir: path.resolve(__dirname, 'build'),
     lib: {
-      entry: path.resolve(__dirname, 'index.ts'),
+      entry: path.resolve(__dirname, 'src', 'package.entry.ts'),
       name: 'voiceflow-chat',
       fileName: (format) => `index.${format}.js`,
       formats: ['es', 'cjs'],

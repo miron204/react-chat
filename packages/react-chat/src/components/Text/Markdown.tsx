@@ -1,8 +1,13 @@
+import { PureComponent } from 'react';
+import type { Options } from 'react-markdown';
 import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
+import rehypeSanitize from 'rehype-sanitize';
 import remarkGfm from 'remark-gfm';
 
 import { styled } from '@/styles';
+
+import { schema, transformURL } from './schema';
 
 const MarkdownText = styled(ReactMarkdown, {
   blockquote: {
@@ -35,9 +40,16 @@ const MarkdownText = styled(ReactMarkdown, {
 });
 
 MarkdownText.defaultProps = {
-  rehypePlugins: [rehypeRaw],
+  urlTransform: transformURL,
+  rehypePlugins: [rehypeRaw, [rehypeSanitize, schema]],
   remarkPlugins: [remarkGfm],
-  linkTarget: '_blank',
+  components: {
+    a: ({ node, href, children, ...props }) => (
+      <a href={href} target="_blank" rel="noopener noreferrer" {...props}>
+        {children}
+      </a>
+    ),
+  },
   remarkRehypeOptions: {
     handlers: {
       break: () => [{ type: 'text', value: '\n' }],
@@ -45,4 +57,32 @@ MarkdownText.defaultProps = {
   },
 };
 
-export default MarkdownText;
+class Markdown extends PureComponent<Options> {
+  state = {
+    hasError: false,
+  };
+
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
+
+  componentDidUpdate(prevProps: Readonly<Options>): void {
+    if (prevProps.children !== this.props.children) {
+      this.setState({ hasError: false });
+    }
+  }
+
+  componentDidCatch(error: unknown, errorInfo: unknown) {
+    console.error(error, errorInfo);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return <>Couldn't render markdown.</>;
+    }
+
+    return <MarkdownText {...this.props} />;
+  }
+}
+
+export default Markdown;

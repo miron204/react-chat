@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useContext, useRef } from 'react';
 import * as R from 'remeda';
 import { match } from 'ts-pattern';
 
@@ -8,12 +8,15 @@ import Carousel from '@/components/Carousel';
 import Image from '@/components/Image';
 import Text from '@/components/Text';
 import Timestamp from '@/components/Timestamp';
+import { RuntimeStateAPIContext } from '@/contexts';
 
-import Feedback, { FeedbackProps } from '../Feedback';
+import type { FeedbackProps } from '../Feedback';
+import Feedback from '../Feedback';
 import { MessageType } from './constants';
+import { ExtensionMessage } from './ExtensionMessage';
 import EndState from './state/end';
 import { Controls, List, MessageContainer } from './styled';
-import { MessageProps } from './types';
+import type { MessageProps } from './types';
 
 export interface SystemMessageProps extends React.PropsWithChildren {
   /**
@@ -27,7 +30,7 @@ export interface SystemMessageProps extends React.PropsWithChildren {
   timestamp: number;
 
   /**
-   * A single message to render with a {@link Message} component.
+   * A single message to render.
    */
   message?: MessageProps;
 
@@ -47,6 +50,8 @@ const SystemMessage: React.FC<SystemMessageProps> = ({ avatar, feedback, timesta
   const containerRef = useRef<HTMLDivElement>(null);
   const controlsRef = useRef<HTMLSpanElement>(null);
 
+  const { config } = useContext(RuntimeStateAPIContext);
+
   if (!children && message?.type === MessageType.END) {
     return <EndState />;
   }
@@ -60,10 +65,13 @@ const SystemMessage: React.FC<SystemMessageProps> = ({ avatar, feedback, timesta
           {children ??
             match(message)
               .with({ type: MessageType.TEXT }, ({ text }) => <Text text={text} />)
-              .with({ type: MessageType.IMAGE }, ({ url }) => <Image image={url} />)
+              .with({ type: MessageType.IMAGE }, ({ url }) => <Image image={url} mode={config.render?.mode} />)
               .with({ type: MessageType.CARD }, (props) => <Card {...R.omit(props, ['type'])} />)
               .with({ type: MessageType.CAROUSEL }, (props) => (
                 <Carousel {...R.omit(props, ['type'])} containerRef={containerRef} controlsRef={controlsRef} />
+              ))
+              .with({ type: MessageType.EXTENSION }, ({ payload }) => (
+                <ExtensionMessage extension={payload.extension} trace={payload.trace} />
               ))
               .otherwise(() => null)}
           {feedback && <Feedback {...feedback} />}

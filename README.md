@@ -52,9 +52,14 @@ interface Configuration {
    */
   assistant?: {
     title?: string;
-    description?: string;
     image?: string;
     color?: string;
+    description?: string;
+    stylesheet?: string;
+  };
+
+  launch?: {
+    event?: RuntimeAction;
   };
 }
 ```
@@ -71,13 +76,13 @@ Ensure that the `verify: { projectID: ... }` field is replaced with your Voicefl
       s = d.getElementsByTagName(t)[0];
     v.onload = function () {
       window.voiceflow.chat.load({
-        verify: { projectID: "XXXXXX..." },
+        verify: { projectID: 'XXXXXX...' },
       });
     };
-    v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
-    v.type = "text/javascript";
+    v.src = 'https://cdn.voiceflow.com/widget/bundle.mjs';
+    v.type = 'text/javascript';
     s.parentNode.insertBefore(v, s);
-  })(document, "script");
+  })(document, 'script');
 </script>
 ```
 
@@ -106,6 +111,11 @@ interface VoiceflowAPI {
 
   // send custom interaction to voiceflow
   interact: (action: RuntimeAction) => void;
+
+  proactive: {
+    push: (...messages: Trace[]) => void;
+    clear: () => void;
+  };
 }
 ```
 
@@ -120,10 +130,11 @@ window.voiceflow.chat.show();
 To run the chat locally you will need to create a local `.env` file with your configuration.
 This will include our Voiceflow project ID and the runtime endpoint.
 
-Create a new file `packages/widget/.env.development.local` with the following contents:
+Create a new file `packages/react-chat/.env.development.local` with the following contents:
 
 ```sh
 VITE_VF_PROJECT_ID='< your project ID >'
+VITE_VF_VERSION_ID='< your version ID [development | production] >'
 VITE_VF_RUNTIME_URL='https://general-runtime.voiceflow.com'
 
 ```
@@ -138,7 +149,7 @@ yarn install
 yarn build
 
 # run dev server
-yarn dev
+yarn local
 ```
 
 Once the server is running it should automatically open your browser with the chat widget.

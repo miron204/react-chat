@@ -1,6 +1,7 @@
 import { ClassName } from '@/constants';
 import { tagFactory } from '@/hocs';
-import { CSS, styled } from '@/styles';
+import type { CSS } from '@/styles';
+import { styled } from '@/styles';
 
 const CHAT_WIDTH = 380;
 const MAX_CHAT_HEIGHT = 800;
@@ -12,7 +13,6 @@ export const ChatContainer = styled(tag('div', 'chat'), {
   overflow: 'hidden',
   borderRadius: '$2',
   boxShadow: '0 2px 48px rgba(19,33,68,0.16), 0 0 0 1px $shadow4',
-
   height: '90%',
   maxHeight: MAX_CHAT_HEIGHT,
 

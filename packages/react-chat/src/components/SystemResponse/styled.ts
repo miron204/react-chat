@@ -65,7 +65,7 @@ export const Container = styled(tag('div'), {
         scrollbarWidth: 'none',
         '-ms-overflow-style': 'none',
 
-        [`&::-webkit-scrollbar`]: {
+        '&::-webkit-scrollbar': {
           display: 'none',
         },
       },
@@ -86,10 +86,10 @@ export const List = styled(tag('div', 'list'), {
   display: 'flex',
   flexDirection: 'column',
   flexShrink: 0,
+  flex: 'inherit',
 
   [`& ${Message.Container}`]: {
     marginBottom: '$1',
-    maxWidth: 248,
 
     '&:last-of-type': {
       marginBottom: 0,

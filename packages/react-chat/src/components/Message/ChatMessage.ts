@@ -13,10 +13,8 @@ export const ChatMessage = styled(tag(Container, 'chat'), {
       user: {
         color: '$white',
         backgroundColor: '$primary',
+        whiteSpace: 'break-spaces',
       },
     },
-  },
-  defaultVariants: {
-    from: 'system',
   },
 });

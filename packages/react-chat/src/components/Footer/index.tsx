@@ -12,30 +12,35 @@ export interface FooterProps {
   withWatermark: boolean;
 
   /**
-   * If true, shows a prompt to start a new chat by calling the {@link onStart} handler.
+   * If true, shows a prompt to start a new chat by calling the {@link FooterProps.onStart} handler.
    * If false, renders controls for the user to write a response.
    */
   hasEnded?: boolean | undefined;
 
   /**
+   * Do not allow a user to send a message while the assistant is processing a response.
+   */
+  disableSend?: boolean | undefined;
+
+  /**
    * A callback to start a new conversation.
    */
-  onStart?: React.MouseEventHandler<HTMLButtonElement> | undefined;
+  onStart?: (() => Promise<void>) | undefined;
 
   /**
    * A callback to submit a user response.
    */
-  onSend?: ((message: string) => void) | undefined;
+  onSend?: ((message: string) => Promise<void>) | undefined;
 }
 
-const Footer: React.FC<FooterProps> = ({ withWatermark, hasEnded, onStart, onSend }) => {
+const Footer: React.FC<FooterProps> = ({ withWatermark, hasEnded, disableSend, onStart, onSend }) => {
   const [message, setMessage] = useState('');
 
-  const handleSend = (): void => {
-    if (!message) return;
+  const handleSend = async (): Promise<void> => {
+    if (!message || disableSend) return;
 
-    onSend?.(message);
     setMessage('');
+    await onSend?.(message);
   };
 
   return (
@@ -43,8 +48,14 @@ const Footer: React.FC<FooterProps> = ({ withWatermark, hasEnded, onStart, onSen
       {hasEnded ? (
         <Button onClick={onStart}>Start New Chat</Button>
       ) : (
-        // eslint-disable-next-line jsx-a11y/no-autofocus
-        <ChatInput value={message} placeholder="Message…" autoFocus onValueChange={setMessage} onSend={handleSend} />
+        <ChatInput
+          value={message}
+          placeholder="Message…"
+          autoFocus
+          onValueChange={setMessage}
+          onSend={handleSend}
+          disableSend={disableSend}
+        />
       )}
       {withWatermark && (
         <Watermark>

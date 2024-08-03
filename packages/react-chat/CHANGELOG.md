@@ -3,6 +3,320 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.59.2](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.59.1...@voiceflow/react-chat@1.59.2) (2024-07-23)
+
+### Bug Fixes
+
+* update document links (COR-2745) ([#149](https://github.com/voiceflow/react-chat/issues/149)) ([522bba8](https://github.com/voiceflow/react-chat/commit/522bba89d7283bb4220ea295ba988ead296aebd6))
+
+## [1.59.1](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.59.0...@voiceflow/react-chat@1.59.1) (2024-06-27)
+
+### Bug Fixes
+
+* word break in card descriptions && image mock url(DX-1996) ([#148](https://github.com/voiceflow/react-chat/issues/148)) ([6daa566](https://github.com/voiceflow/react-chat/commit/6daa566866950adde47bbe1d16398b96edf6c0ec))
+
+# [1.59.0](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.58.3...@voiceflow/react-chat@1.59.0) (2024-06-23)
+
+### Features
+
+* allow button action by entering button label (COR-2196) ([#143](https://github.com/voiceflow/react-chat/issues/143)) ([4e190fe](https://github.com/voiceflow/react-chat/commit/4e190fe15827fb1a0be31f8e62fcdff80413f07d))
+
+## [1.58.3](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.58.2...@voiceflow/react-chat@1.58.3) (2024-06-21)
+
+### Bug Fixes
+
+* add local development workflow (ENG-158) ([#145](https://github.com/voiceflow/react-chat/issues/145)) ([4409650](https://github.com/voiceflow/react-chat/commit/4409650418b8f3ff02ae894b7af567e81d40e540))
+
+## [1.58.2](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.58.1...@voiceflow/react-chat@1.58.2) (2024-05-22)
+
+### Bug Fixes
+
+* bumps dtos package [bugfix] (COR-2142) ([#142](https://github.com/voiceflow/react-chat/issues/142)) ([9df8e7d](https://github.com/voiceflow/react-chat/commit/9df8e7d18207d57fdd64152129d8da7259992511))
+
+## [1.58.1](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.58.0...@voiceflow/react-chat@1.58.1) (2024-05-15)
+
+### Bug Fixes
+
+* malformed request payloads (PL-1037) ([#141](https://github.com/voiceflow/react-chat/issues/141)) ([9c30fdb](https://github.com/voiceflow/react-chat/commit/9c30fdba9d41660aeb735a41bdda0b58040b54b0))
+
+# [1.58.0](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.57.0...@voiceflow/react-chat@1.58.0) (2024-04-23)
+
+### Features
+
+* upgrade toolchain to latest ([#139](https://github.com/voiceflow/react-chat/issues/139)) ([3eb2244](https://github.com/voiceflow/react-chat/commit/3eb22445fe45f3d84f4ae889aa8b01f0b22c07f6))
+
+# [1.57.0](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.56.5...@voiceflow/react-chat@1.57.0) (2024-04-08)
+
+### Features
+
+* add live agent example (DX-1623) ([#133](https://github.com/voiceflow/react-chat/issues/133)) ([68cdf62](https://github.com/voiceflow/react-chat/commit/68cdf626a3a6acf3624e43cbc107fe7f0f9ea7f1))
+
+## [1.56.5](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.56.4...@voiceflow/react-chat@1.56.5) (2024-03-22)
+
+### Bug Fixes
+
+* button text overflow ([#117](https://github.com/voiceflow/react-chat/issues/117)) ([d7984ed](https://github.com/voiceflow/react-chat/commit/d7984ed8e94aae09ed144fc26e346512a7dfcfac))
+
+## [1.56.4](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.56.3...@voiceflow/react-chat@1.56.4) (2024-03-22)
+
+### Bug Fixes
+
+* card title wrapping(DX-1132) ([#129](https://github.com/voiceflow/react-chat/issues/129)) ([05b0125](https://github.com/voiceflow/react-chat/commit/05b012508c58ea4cd239c1efaea6a406bfcd17f3))
+
+## [1.56.3](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.56.2...@voiceflow/react-chat@1.56.3) (2024-03-21)
+
+### Bug Fixes
+
+* storybook build (DX-1551) ([#116](https://github.com/voiceflow/react-chat/issues/116)) ([dbf9e63](https://github.com/voiceflow/react-chat/commit/dbf9e632bb32f1113aa04d2d9dd04422464b70e2))
+
+## [1.56.2](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.56.1...@voiceflow/react-chat@1.56.2) (2024-03-19)
+
+### Bug Fixes
+
+* prevent sending message while waiting (BUG-739) ([#119](https://github.com/voiceflow/react-chat/issues/119)) ([e88df3b](https://github.com/voiceflow/react-chat/commit/e88df3b986c120674825f821b99eb4d983ae1952))
+
+## [1.56.1](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.56.0...@voiceflow/react-chat@1.56.1) (2024-03-15)
+
+### Bug Fixes
+
+* save session status in persistent memory (DX-1549) ([#118](https://github.com/voiceflow/react-chat/issues/118)) ([3640462](https://github.com/voiceflow/react-chat/commit/3640462ea35b2258f8ae1fb340ba5736f5ec4512))
+
+# [1.56.0](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.55.4...@voiceflow/react-chat@1.56.0) (2024-03-05)
+
+### Features
+
+* effect and response extension support (DX-1100) ([#115](https://github.com/voiceflow/react-chat/issues/115)) ([6f195b3](https://github.com/voiceflow/react-chat/commit/6f195b356e11581f8761ae995d2e1eab6daa9901))
+
+## [1.55.4](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.55.3...@voiceflow/react-chat@1.55.4) (2024-02-26)
+
+### Bug Fixes
+
+* system response stretch behaviour(DX-1088) ([#113](https://github.com/voiceflow/react-chat/issues/113)) ([51a677f](https://github.com/voiceflow/react-chat/commit/51a677fdb5feaf68b31db12eda34f7ba4b2dcb60))
+
+## [1.55.3](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.55.2...@voiceflow/react-chat@1.55.3) (2024-02-23)
+
+### Bug Fixes
+
+* autostart (CT-000) ([#114](https://github.com/voiceflow/react-chat/issues/114)) ([cb7ad34](https://github.com/voiceflow/react-chat/commit/cb7ad3400c82a3bebaa549260332d11135b13fcb))
+
+## [1.55.2](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.55.1...@voiceflow/react-chat@1.55.2) (2024-02-22)
+
+### Bug Fixes
+
+* use isolated root (BUG-771) ([#112](https://github.com/voiceflow/react-chat/issues/112)) ([5926fe9](https://github.com/voiceflow/react-chat/commit/5926fe90de5bd423ea9b2452e2c517e308134901))
+
+## [1.55.1](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.55.0...@voiceflow/react-chat@1.55.1) (2024-02-22)
+
+### Bug Fixes
+
+* autostart default value (DX-1087) ([#111](https://github.com/voiceflow/react-chat/issues/111)) ([d2e6978](https://github.com/voiceflow/react-chat/commit/d2e697845a96d15118b1214b2c18b3bf54abc0e6))
+
+# [1.55.0](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.54.0...@voiceflow/react-chat@1.55.0) (2024-02-22)
+
+### Features
+
+* embedded chat mode - lazy style attachment (DX-996) ([#110](https://github.com/voiceflow/react-chat/issues/110)) ([623a014](https://github.com/voiceflow/react-chat/commit/623a014501f78cbd32160962d0d428e009617c0f))
+
+# [1.54.0](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.53.1...@voiceflow/react-chat@1.54.0) (2024-02-21)
+
+### Features
+
+* add voiceflow:interact event to differentiate from voiceflow:save_session (DX-1078) ([#109](https://github.com/voiceflow/react-chat/issues/109)) ([d44c713](https://github.com/voiceflow/react-chat/commit/d44c713ce521a00c4405eea07536ca5dbdfcc742))
+
+## [1.53.1](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.53.0...@voiceflow/react-chat@1.53.1) (2024-02-21)
+
+### Reverts
+
+* Revert "feat: embedded chat mode - lazy style attachment (DX-996) (#108)" ([940f015](https://github.com/voiceflow/react-chat/commit/940f0157bee9d512afc688558670476ef70b20a4)), closes [#108](https://github.com/voiceflow/react-chat/issues/108)
+
+# [1.53.0](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.52.1...@voiceflow/react-chat@1.53.0) (2024-02-21)
+
+### Features
+
+* embedded chat mode - lazy style attachment (DX-996) ([#108](https://github.com/voiceflow/react-chat/issues/108)) ([2e0af51](https://github.com/voiceflow/react-chat/commit/2e0af510fb59ca5b1f917935840cca8a3e661bdf))
+
+## [1.52.1](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.52.0...@voiceflow/react-chat@1.52.1) (2024-02-08)
+
+### Reverts
+
+* Revert "feat: chat embed(DX-996) (#106)" ([a1fbd8b](https://github.com/voiceflow/react-chat/commit/a1fbd8b9910cd2dd6af5da396007b8c18dfd6b33)), closes [#106](https://github.com/voiceflow/react-chat/issues/106)
+
+# [1.52.0](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.51.3...@voiceflow/react-chat@1.52.0) (2024-02-07)
+
+### Features
+
+* chat embed(DX-996) ([#106](https://github.com/voiceflow/react-chat/issues/106)) ([d888506](https://github.com/voiceflow/react-chat/commit/d888506dc9483a9de3d494836d23482f04443830))
+
+## [1.51.3](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.51.2...@voiceflow/react-chat@1.51.3) (2024-01-16)
+
+### Bug Fixes
+
+* markdown render (CT-000) ([#101](https://github.com/voiceflow/react-chat/issues/101)) ([ab48864](https://github.com/voiceflow/react-chat/commit/ab488640e4a2b12633347ae91f1e6c8daf23a9b5))
+
+## [1.51.2](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.51.1...@voiceflow/react-chat@1.51.2) (2023-12-19)
+
+### Bug Fixes
+
+*  textarea font size (DX-000) ([#99](https://github.com/voiceflow/react-chat/issues/99)) ([b2c6d0b](https://github.com/voiceflow/react-chat/commit/b2c6d0b73433cefbdaebc932f5564bd94b0161ed))
+
+## [1.51.1](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.51.0...@voiceflow/react-chat@1.51.1) (2023-12-19)
+
+### Bug Fixes
+
+* message bubble white-space property (DX-876) ([#98](https://github.com/voiceflow/react-chat/issues/98)) ([eb9d24d](https://github.com/voiceflow/react-chat/commit/eb9d24dc985aebbc18b42ee02c515a6db36184ca))
+
+# [1.51.0](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.50.4...@voiceflow/react-chat@1.51.0) (2023-12-14)
+
+### Features
+
+* new line on Shift + Enter (ACT-25) ([#95](https://github.com/voiceflow/react-chat/issues/95)) ([f38c705](https://github.com/voiceflow/react-chat/commit/f38c7054a017739222d33b3c05b3b96e56d66afd))
+
+## [1.50.4](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.50.3...@voiceflow/react-chat@1.50.4) (2023-12-07)
+
+### Bug Fixes
+
+* add buffering for requests (ACT-20) ([#94](https://github.com/voiceflow/react-chat/issues/94)) ([e5d7ee8](https://github.com/voiceflow/react-chat/commit/e5d7ee8a4e5bb64f91e795c85d5db5ac71162aa2))
+* linting ([a07b9bb](https://github.com/voiceflow/react-chat/commit/a07b9bb0c301aa2ff8a94ec3340a66b7ca927605))
+
+## [1.50.3](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.50.2...@voiceflow/react-chat@1.50.3) (2023-11-28)
+
+### Bug Fixes
+
+* stop event propagation from chat input (ACT-000) ([#92](https://github.com/voiceflow/react-chat/issues/92)) ([e0a116a](https://github.com/voiceflow/react-chat/commit/e0a116ae4a0f1f6621b0b401c0863782dc7e6f7a))
+
+## [1.50.2](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.50.1...@voiceflow/react-chat@1.50.2) (2023-11-27)
+
+### Bug Fixes
+
+* add ready field ([6fade9f](https://github.com/voiceflow/react-chat/commit/6fade9fa2cc5ab2d0b2c407bc82d727cb473b8f5))
+
+## [1.50.1](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.50.0...@voiceflow/react-chat@1.50.1) (2023-11-27)
+
+### Bug Fixes
+
+* transform url (ACT-000) ([83af161](https://github.com/voiceflow/react-chat/commit/83af1614a8d12e388e41b5db768027ba1c8c0037))
+
+# [1.50.0](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.49.6...@voiceflow/react-chat@1.50.0) (2023-11-27)
+
+### Features
+
+* fix card image height (BUG-637) ([#91](https://github.com/voiceflow/react-chat/issues/91)) ([23e447c](https://github.com/voiceflow/react-chat/commit/23e447c7e3165b777408d8486962e2524530e4c0))
+
+## [1.49.6](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.49.5...@voiceflow/react-chat@1.49.6) (2023-11-27)
+
+### Bug Fixes
+
+* export theme ([3d17ff0](https://github.com/voiceflow/react-chat/commit/3d17ff0361ce89845e3793582eeaeb24af96abde))
+
+## [1.49.5](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.49.4...@voiceflow/react-chat@1.49.5) (2023-11-26)
+
+### Bug Fixes
+
+* less restrictive sanitization (ACT-000) ([c655047](https://github.com/voiceflow/react-chat/commit/c655047d18b9e2a08d3cf856526dcf9759e45c51))
+
+## [1.49.4](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.49.3...@voiceflow/react-chat@1.49.4) (2023-11-25)
+
+### Bug Fixes
+
+* bump base types ([0f14296](https://github.com/voiceflow/react-chat/commit/0f14296fb74c0fc0f56f8bc4bceb5c8d06377fd5))
+
+## [1.49.3](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.49.2...@voiceflow/react-chat@1.49.3) (2023-11-25)
+
+### Bug Fixes
+
+* test suite ([279fd87](https://github.com/voiceflow/react-chat/commit/279fd87c1d9adbd606aa475c1f2b81ff14bd11df))
+* use global shadowroot env var (ACT-000) ([a01f6b0](https://github.com/voiceflow/react-chat/commit/a01f6b0d6ede84f9d4b631bc934bd6923b982116))
+
+## [1.49.2](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.49.1...@voiceflow/react-chat@1.49.2) (2023-11-25)
+
+### Bug Fixes
+
+* export without shadowroot (ACT-000) ([#90](https://github.com/voiceflow/react-chat/issues/90)) ([683dc32](https://github.com/voiceflow/react-chat/commit/683dc32cac3dbec2d6dabe41d60057b5ad266a1f))
+
+## [1.49.1](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.49.0...@voiceflow/react-chat@1.49.1) (2023-11-25)
+
+### Bug Fixes
+
+* bump version and update types reference ([f9f6df2](https://github.com/voiceflow/react-chat/commit/f9f6df24863a3f4c2b6e9822c15672f24dfefa3d))
+
+# [1.49.0](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.48.1...@voiceflow/react-chat@1.49.0) (2023-11-25)
+
+### Bug Fixes
+
+* add broadcast and launch events ([#89](https://github.com/voiceflow/react-chat/issues/89)) ([dc2aafa](https://github.com/voiceflow/react-chat/commit/dc2aafa7e2705119d0c0b7a6a77ce216bc33889c))
+
+### Features
+
+* allow dangerous html flag (CT-000) ([#88](https://github.com/voiceflow/react-chat/issues/88)) ([2363764](https://github.com/voiceflow/react-chat/commit/2363764495d62abd412fd6627bda2e9e2fc1557e))
+
+## [1.48.1](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.48.0...@voiceflow/react-chat@1.48.1) (2023-11-24)
+
+### Bug Fixes
+
+* do not allow dangerous html ([5888cfe](https://github.com/voiceflow/react-chat/commit/5888cfe6ee6619928477f266b04e6876e08f13bf))
+
+# [1.48.0](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.47.8...@voiceflow/react-chat@1.48.0) (2023-11-24)
+
+### Features
+
+* fix card overflow issue (CV3-307) ([#70](https://github.com/voiceflow/react-chat/issues/70)) ([5484d63](https://github.com/voiceflow/react-chat/commit/5484d63661127b50bc2a7c44173ba39cddc1c43f))
+
+## [1.47.8](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.47.7...@voiceflow/react-chat@1.47.8) (2023-11-24)
+
+### Bug Fixes
+
+* no reply timeout (ACT-014) ([#87](https://github.com/voiceflow/react-chat/issues/87)) ([c54282c](https://github.com/voiceflow/react-chat/commit/c54282c102f147f20c3c38234a48a9f6e5062827))
+
+## [1.47.7](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.47.6...@voiceflow/react-chat@1.47.7) (2023-11-24)
+
+### Bug Fixes
+
+* stitches theme color (CT-000) ([e991afe](https://github.com/voiceflow/react-chat/commit/e991afed42a85472367882a4988738bd7e0854d1))
+
+## [1.47.6](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.47.5...@voiceflow/react-chat@1.47.6) (2023-11-17)
+
+**Note:** Version bump only for package @voiceflow/react-chat
+
+## [1.47.5](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.47.4...@voiceflow/react-chat@1.47.5) (2023-11-08)
+
+### Bug Fixes
+
+* dtos ([dee0811](https://github.com/voiceflow/react-chat/commit/dee081188353858ff27f9d08b5cb39b22a78df52))
+
+### Reverts
+
+* Revert "Revert "fix: validate responses through dtos (#83)"" ([3095232](https://github.com/voiceflow/react-chat/commit/3095232a8c07ca3703241cc1dbb1601a4104d1e4)), closes [#83](https://github.com/voiceflow/react-chat/issues/83)
+
+## [1.47.4](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.47.3...@voiceflow/react-chat@1.47.4) (2023-11-08)
+
+### Reverts
+
+* Revert "fix: validate responses through dtos (#83)" ([8321d47](https://github.com/voiceflow/react-chat/commit/8321d472546a608ba636e622d13132fa969b3940)), closes [#83](https://github.com/voiceflow/react-chat/issues/83)
+
+## [1.47.3](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.47.2...@voiceflow/react-chat@1.47.3) (2023-11-08)
+
+### Bug Fixes
+
+* validate responses through dtos ([#83](https://github.com/voiceflow/react-chat/issues/83)) ([45ba436](https://github.com/voiceflow/react-chat/commit/45ba436459d1728cd2753c4ef5facb3c35d28903))
+
+## [1.47.2](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.47.1...@voiceflow/react-chat@1.47.2) (2023-11-08)
+
+### Bug Fixes
+
+* launch options (CT-000) ([#84](https://github.com/voiceflow/react-chat/issues/84)) ([ac5cb1d](https://github.com/voiceflow/react-chat/commit/ac5cb1d456ea6488f9bd789d7a3256e1f57b6607))
+
+## [1.47.1](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.47.0...@voiceflow/react-chat@1.47.1) (2023-11-03)
+
+### Bug Fixes
+
+* move api out of react-chat (CT-000) ([#82](https://github.com/voiceflow/react-chat/issues/82)) ([d6cfb58](https://github.com/voiceflow/react-chat/commit/d6cfb5833935dc84a9a6b524064c07c062b8affb))
+
+# [1.47.0](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.46.7...@voiceflow/react-chat@1.47.0) (2023-11-02)
+
+### Features
+
+* proactive messages ([#81](https://github.com/voiceflow/react-chat/issues/81)) ([40e3b0c](https://github.com/voiceflow/react-chat/commit/40e3b0ce13366139c61c58787ac71f3c66462d46))
+
 ## [1.46.7](https://github.com/voiceflow/react-chat/compare/@voiceflow/react-chat@1.46.6...@voiceflow/react-chat@1.46.7) (2023-10-27)
 
 ### Bug Fixes

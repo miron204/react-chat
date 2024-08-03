@@ -1,12 +1,14 @@
 import react from '@vitejs/plugin-react';
 import path from 'path';
-import { defineConfig, PluginOption } from 'vite';
+import type { PluginOption } from 'vite';
+import { defineConfig, loadEnv } from 'vite';
 import fonts from 'vite-plugin-fonts';
+import { createHtmlPlugin } from 'vite-plugin-html';
 import svgr from 'vite-plugin-svgr';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
-export const createPlugins = (rootDir = __dirname): PluginOption[] => [
-  tsconfigPaths({ root: rootDir, projects: [path.join(__dirname, 'tsconfig.json')] }),
+export const createPlugins = (): PluginOption[] => [
+  tsconfigPaths(),
   svgr(),
   fonts({
     google: {
@@ -21,23 +23,43 @@ export const createPlugins = (rootDir = __dirname): PluginOption[] => [
   }),
 ];
 
-export default defineConfig({
-  server: {
-    port: 3006,
-    open: false,
-  },
-  define: {
-    'process.env': '({})',
-  },
-  base: '',
-  build: {
-    outDir: path.resolve(__dirname, 'dist', process.env.CIRCLE_SHA1 || 'latest'),
-    lib: {
-      entry: path.resolve(__dirname, 'index.html'),
-      name: 'voiceflow-chat',
-      fileName: 'bundle',
-      formats: ['es'],
+export default defineConfig(({ mode }) => {
+  const env = loadEnv(mode, process.cwd());
+
+  return {
+    server: {
+      port: 3006,
+      open: '/examples/index.html',
     },
-  },
-  plugins: [react(), ...createPlugins()],
+    define: {
+      __USE_SHADOW_ROOT__: true,
+      'process.env': {},
+    },
+    build: {
+      lib: {
+        entry: path.resolve(__dirname, 'src', 'index.tsx'),
+        name: 'voiceflow-react-chat',
+        fileName: 'bundle',
+        formats: ['iife'],
+      },
+      rollupOptions: {
+        output: {
+          extend: true,
+          entryFileNames: 'bundle.mjs',
+        },
+      },
+    },
+    plugins: [
+      react(),
+      ...(mode === 'development'
+        ? [
+            createHtmlPlugin({
+              template: 'examples/index.html',
+              inject: { data: env },
+            }),
+          ]
+        : []),
+      ...createPlugins(),
+    ],
+  };
 });
