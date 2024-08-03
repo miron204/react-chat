@@ -20,13 +20,12 @@
   <body>
     <div id="flat-chat"></div>
     <div id="voiceflow-chat-frame"></div>
-
     <script>
       function _vf_load() {
         window.voiceflow.chat.load({
-          url: '<%= VITE_VF_RUNTIME_URL %>',
-          verify: { projectID: '<%= VITE_VF_PROJECT_ID %>' },
-          versionID: '<%= VITE_VF_VERSION_ID %>',
+          url: 'https://general-runtime.voiceflow.com',
+          verify: { projectID: '65411aeebfefa7000746d1d3' },
+          versionID: 'production',
           user: {
             name: 'Development User',
           },
