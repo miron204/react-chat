@@ -9,25 +9,30 @@ export const Button = styled(tag('button'), {
   justifyContent: 'center',
   alignItems: 'center',
   borderRadius: '$round',
-  backgroundColor: '$primary',
+  backgroundColor: 'transparent', //'$primary',
   trans: ['background-color', 'box-shadow'],
 
-  height: '$xl',
-  width: '$xl',
-  border: '1px solid $shadow4',
-  boxShadow: '0 1px 6px $shadow6, 0 2px 24px $shadow8',
+  height: '$xxl',
+  width: '$xxl',
+  border: 'none',
+  //border: '1px solid $shadow4',
+  //boxShadow: '0 1px 6px $shadow6, 0 2px 24px $shadow8',
 
   '&:focus': {
     outline: 0,
   },
   '&:hover': {
     cursor: 'pointer',
-    backgroundColor: '$darkPrimary',
+    backgroundColor: 'transparent', //'$darkPrimary',
   },
 
   '& > img': {
-    width: '$sm',
-    height: '$sm',
+    width: '$xxl',
+    height: '$xxl',
+    filter: 'grayscale(0%)',
+  },
+  '& > img:hover': {
+    filter: 'grayscale(40%)',
   },
 
   padding: 0,

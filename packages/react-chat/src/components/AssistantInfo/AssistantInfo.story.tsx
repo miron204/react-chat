@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import Chat from '@/components/Chat';
-import { VF_ICON } from '@/fixtures';
+import { VF_ICON_ASSISTANT } from '@/fixtures';
 
 import type { AssistantInfoProps } from '.';
 import AssistantInfo from '.';
@@ -12,9 +12,9 @@ const meta: Meta<typeof AssistantInfo> = {
   title: 'Components/Chat/AssistantInfo',
   component: AssistantInfo,
   args: {
-    title: 'Assistant Name',
-    description: "Voiceflow's virtual assistant is here to help.",
-    avatar: VF_ICON,
+    title: 'Anna',
+    description: "Virtual assistant is here to help.",
+    avatar: VF_ICON_ASSISTANT,
   },
 };
 

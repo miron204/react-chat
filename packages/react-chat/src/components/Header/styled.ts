@@ -45,7 +45,7 @@ export const Container = styled(tag('header'), {
   display: 'flex',
   flexShrink: 0,
   alignItems: 'center',
-  height: '$lg',
+  height: '$md',
   padding: '0 $4 0 $5',
   backgroundColor: '$primary',
   boxShadow: '0 1px 2px $shadow16',
