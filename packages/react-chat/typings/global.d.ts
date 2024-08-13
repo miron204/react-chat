@@ -25,7 +25,7 @@ declare global {
   }
 
   interface Window {
-    voiceflow?: {
+    voiceflow_embed?: {
       chat?: VoiceflowChat;
     };
   }

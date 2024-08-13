@@ -52,10 +52,10 @@ const ChatWidget: React.FC<ChatWidgetProps> = ({ shadowRoot, chatAPI, ready }) =
 
   return (
     <Container withChat={isOpen} isHidden={isHidden} className={theme}>
-      <LauncherContainer style={position}>
+      {/*<LauncherContainer style={position}>
         <Proactive side={side} messages={proactiveMessages} />
         <Launcher onClick={open} image={assistant.launcher} />
-      </LauncherContainer>
+      </LauncherContainer>*/}
       <ChatContainer style={isMobile ? {} : position}>
         <ChatWindow />
       </ChatContainer>

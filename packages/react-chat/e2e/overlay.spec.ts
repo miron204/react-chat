@@ -20,19 +20,19 @@ test('control widget visibility and open state', async ({ page }) => {
 
   await launcher.waitFor({ state: 'visible' });
 
-  await page.evaluate(() => window.voiceflow?.chat?.open());
+  await page.evaluate(() => window.voiceflow_embed?.chat?.open());
 
   await chat.waitFor({ state: 'visible' });
 
-  await page.evaluate(() => window.voiceflow?.chat?.close());
+  await page.evaluate(() => window.voiceflow_embed?.chat?.close());
 
   expect(chat).not.toBeInViewport();
 
-  await page.evaluate(() => window.voiceflow?.chat?.hide());
+  await page.evaluate(() => window.voiceflow_embed?.chat?.hide());
 
   await launcher.waitFor({ state: 'hidden' });
 
-  await page.evaluate(() => window.voiceflow?.chat?.show());
+  await page.evaluate(() => window.voiceflow_embed?.chat?.show());
 
   await launcher.waitFor({ state: 'visible' });
 });

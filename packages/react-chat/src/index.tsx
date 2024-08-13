@@ -44,8 +44,8 @@ const methods = createPlaceholderMethods(
   (method: string) => `Method '${method}' will have no effect until 'load' has been called.`
 );
 
-window.voiceflow ??= {};
-window.voiceflow.chat ??= {
+window.voiceflow_embed ??= {};
+window.voiceflow_embed.chat ??= {
   ...methods,
   proactive: { ...methods.proactive },
 
@@ -60,10 +60,10 @@ window.voiceflow.chat ??= {
       reactRoot.render(
         <RuntimeProvider assistant={assistant} config={config}>
           {config.render.mode === RenderMode.EMBEDDED && (
-            <ChatEmbed shadowRoot={shadowRoot} chatAPI={window.voiceflow?.chat} ready={resolve} />
+            <ChatEmbed shadowRoot={shadowRoot} chatAPI={window.voiceflow_embed?.chat} ready={resolve} />
           )}
           {config.render.mode === RenderMode.OVERLAY && (
-            <ChatWidget shadowRoot={shadowRoot} chatAPI={window.voiceflow?.chat} ready={resolve} />
+            <ChatWidget shadowRoot={shadowRoot} chatAPI={window.voiceflow_embed?.chat} ready={resolve} />
           )}
         </RuntimeProvider>
       );

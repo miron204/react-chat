@@ -10,7 +10,7 @@ test('renders launcher and widget appears on click', async ({ page }) => {
 
   await page.evaluate(
     ([message]) =>
-      window.voiceflow?.chat?.proactive.push({
+      window.voiceflow_embed?.chat?.proactive.push({
         type: 'text' as Trace.TraceType.TEXT,
         payload: { slate: { id: '', content: [] }, message },
       }),
